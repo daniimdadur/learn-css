@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        body {
+            counter-set: title 0;
+            counter-set: subTitle 0;
+        }
+        h1 {
+            counter-increment: title;
+            counter-reset: subTitle;
+        }
+        h2 {
+            counter-increment: subTitle
+        }
+        h1::before {
+            content: counter(title) ". ";
+        }
+        h2::before {
+            content: counter(title)"." counter(subTitle) ". ";
+        }
+    </style>
+</head>
+<body>
+    <h1>This is title</h1>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h1>This is title</h1>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h1>This is title</h1>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h1>This is title</h1>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h1>This is title</h1>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h1>This is title</h1>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+    <h2>This is sub title</h2>
+</body>
+</html>
