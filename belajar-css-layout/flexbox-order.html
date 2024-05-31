@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-order</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .content {
+            background-color: aqua;
+            width: 200px;
+            border: 2px solid black;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content" style="order: 3;">
+            <h1>This is Title 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolore error quam modi amet ad tenetur nihil ab, sint, alias velit harum blanditiis repudiandae id dignissimos eveniet dolorem iusto quae.</p>
+        </div>
+        <div class="content" style="order: 1;">
+            <h1>This is Title 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolore error quam modi amet ad tenetur nihil ab, sint, alias velit harum blanditiis repudiandae id dignissimos eveniet dolorem iusto quae.</p>
+        </div>
+        <div class="content" style="order: 2;">
+            <h1>This is Title 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolore error quam modi amet ad tenetur nihil ab, sint, alias velit harum blanditiis repudiandae id dignissimos eveniet dolorem iusto quae.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 100px;
+            grid-template-areas: 
+                "header header header"
+                ". content ."
+                "footer footer footer";
+        }
+        .header {
+            background-color: aqua;
+            grid-area: header;
+        }
+        .footer {
+            background-color: aqua;
+            grid-area: footer;
+        }
+        .content {
+            background-color: bisque;
+            grid-area: content;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Welcome to My Web
+        </div>
+        <div class="content">
+            <h1>Gentara Comunity</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quaerat, ducimus laudantium cupiditate ut non illo culpa nihil natus omnis, quidem voluptas repudiandae, dolorem quis quae ipsa officiis quasi id.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ipsam tenetur quos necessitatibus optio dignissimos eligendi recusandae aliquid nobis! Modi sequi quam qui voluptatem velit possimus quod blanditiis nam nihil!</p>
+        </div>
+        <div class="footer">
+            Develop wiht love by Programmer Zaman Now
+        </div>
+    </div>
+</body>
+</html>
